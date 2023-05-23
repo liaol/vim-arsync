@@ -46,7 +46,7 @@ function! JobHandler(job_id, data, event_type)
             copen
         endif
         if a:data == 0
-            echo "vim-arsync success."
+            #echo "vim-arsync success."
         endif
         " echom string(a:data)
     endif
@@ -117,7 +117,7 @@ function! ARsync(direction)
             " TODO: handle errors
         endfor
     else
-        echoerr 'Could not locate a .vim-arsync configuration file. Aborting...'
+        #echoerr 'Could not locate a .vim-arsync configuration file. Aborting...'
     endif
 endfunction
 
